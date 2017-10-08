@@ -1,0 +1,126 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Felipe}{Almeida}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+% \address{my address, line 1, line 2, line 3, postcode}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+55 71 98844 6552}                   % optional, remove / comment the line if not wanted
+\phone[fixed]{+55 71 3345 2780}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{felipera@openmailbox.org}                               % optional, remove / comment the line if not wanted
+\homepage{https://github.com/toxad/}                         % optional, remove / comment the line if not wanted
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Sobre mim}
+
+\small{Olá, meu nome é Felipe Rodrigues de Almeida e curso Engenharia da Computação desde 2013, apesar de estar aprendendo sobre a área muito antes. Desde o ensino fundamental venho aprendendo e trabalhando (nesta época mais como um hobby) com a área de computação em geral. Sou uma pessoa que gosta de resolver problemas de uma maneira criativa e tendo um pensamento "fora da caixa". Apesar de ter um interesse imenso pela área de computação como um todo, me interesso mais com a área de sistemas UNIX (lê-se Linux e derivados) e com a área de redes de computadores (com enfoque em redes de alto desempenho, redes ópticas passivas - PON).}
+
+\section{Experiência}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\cventry{Setembro 2016}{Finalista na classificação Trabalho de Disciplina de Graduação}{UFBA - DCC Demonstration Day 2016}{}{}{}}
+
+\vspace{6pt}
+
+\item{\cventry{2016 -- 2018}{GRADE - Grupo de pesquisa em redes de alto desempenho}{Integrante}{}{}{\vspace{3pt}Faço parte do grupo e realizo pesquisas/apresentações em torno da área de redes ópticas passivas, mais especificamente nas futuras possíveis tecnologias de redes de acesso a rádio, implementando como proposta um simulador para inferir dados significativos sobre determinados aspectos da rede.}}
+
+\end{itemize}
+
+\section{Educação}
+
+\vspace{5pt}
+
+\subsection{Qualificação Académica}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{2013--2018}{Bacharelado em Engenharia da Computação}{UFBA - Universidade Federal da Bahia}{Salvador Bahia}{}{}}
+
+\end{itemize}
+
+\vspace{2pt}
+
+\subsection{Cursos}
+
+\vspace{5pt}
+
+\begin{itemize}
+% Coursera - Learn to Program: The Fundamentals, University of Toronto - 2012
+
+\item{\cventry{2012}{Learn to Program: The Fundamentals, University of Toronto}{Coursera}{}{}{}}
+
+\vspace{3pt}
+
+\item{\cventry{2017 --}{The Complete Ethical Hacking Course: Beginner to Advanced}{Udemy}{}{}{}}
+
+\end{itemize}
+
+\section{Habilidades}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item \textbf{Linguagens de Programação:} \\ Proficiência em: C, Python, Java, C++ \\ Familiar em: Assembly, Verilog, Bash, C\#, Haskell, SQL, Matlab, PHP.
+
+\vspace{6pt}
+
+\item \textbf{Tecnologias:} Linux, Autotools, Django, Quartus, Git.
+
+\vspace{6pt}
+
+\end{itemize}
+
+\end{document}
+
+
+%% end of file `template.tex'.
